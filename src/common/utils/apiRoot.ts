@@ -1,8 +1,3 @@
-export const getApiRoot = () => {
-    // return "https://swapi.dev/api";
-    return "http://localhost:3000";
-}
-
 import axios from "axios";
 // const hostUrl = "http://localhost:3000";
 const hostUrl = "https://swapi.dev";
