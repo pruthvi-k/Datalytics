@@ -1,18 +1,20 @@
+import { useAtom } from "jotai";
 import Chart from "../../common/components/charts";
 import formatChartData from "../../common/utils/dataFormatter";
+import { selectedResourceAtom } from "../../store";
 
 function ChatPlot({ data }: any) {
-  const {categories, chartData} = formatChartData(data);
+  const [type] = useAtom(selectedResourceAtom);
+  const {categories, chartData} = formatChartData(type, data);
   const chartDataConfig = {
     type: "",
-    title: "Start War Legends",
     categories: categories,
     yTitle: 'Assets',
     series: chartData
   }
 
   return (
-    <Chart data={chartDataConfig} />
+    <Chart data={chartDataConfig} title={type}/>
   );
 }
 

@@ -5,13 +5,12 @@ import { getChartConfig } from './config';
 
 interface ChartProps {
     type: string;
-    title: string;
     categories: string[];
     series: SeriesOptionsType[] | any;
     yTitle: string;
 }
 
-function Chart(props: { data: ChartProps }) {
+function Chart(props: { data: ChartProps, title: string }) {
   const data = props.data;
 
   // Create a ref to hold the Highcharts chart instance
@@ -19,6 +18,13 @@ function Chart(props: { data: ChartProps }) {
 
   // Define the chart options based on the provided data
   const chartOptions = {
+    title: {
+      text: `${props.title} chart`,
+      style: {
+        color: 'grey',
+        "text-transform": 'capitalize'
+      }
+    },
     ...getChartConfig(),
     xAxis: {
       categories: data.categories,

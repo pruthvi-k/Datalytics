@@ -4,12 +4,6 @@ import { Container, Typography } from '@mui/material';
 import SWResources from './components/SWResources';
 
 function App() {
-  // const [data1, data2] = useQueries({
-  //   queries: [
-  //     { queryKey: ['type', 'people'], queryFn: async () => await fetch(), staleTime: Infinity },
-  //     { queryKey: ['type', 'film'], queryFn: async () => await fetch(), staleTime: Infinity }
-  //   ]
-  // })
   return (
     <Provider>
       <Container sx={{ paddingTop: '2rem', width: "100vw", maxWidth: "100%" }}>
