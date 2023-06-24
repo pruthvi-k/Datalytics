@@ -6,15 +6,12 @@ Datalytics is a web application that provides data analytics and visualization f
 <!-- TechStack -->
 ### :space_invader: Main Tech Stack
 
-<details>
-  <summary>Client</summary>
   <ul>
     <li><a href="https://www.typescriptlang.org/">Typescript</a></li>
     <li><a href="https://reactjs.org/">React.js</a></li>
     <li><a href="https://vitejs.dev/">Vite</a></li>
     <li><a href="https://jotai.org/">Jotai</a></li>
   </ul>
-</details>
 
 <!-- Getting Started -->
 ## 	:toolbox: Getting Started
