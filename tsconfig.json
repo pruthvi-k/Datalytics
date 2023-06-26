@@ -24,7 +24,7 @@
   },
   "include": [
     "src",
-    "./setupTest.ts"
+    "./jset.setup.ts"
   ],
   "references": [
     {
